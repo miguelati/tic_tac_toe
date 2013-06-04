@@ -4,7 +4,3 @@
 require File.expand_path('../config/application', __FILE__)
 
 TicTacToe::Application.load_tasks
-
-if %w(staging production).include? Rails.env
-  $heroku_deploying = true if File.basename($0) == 'rake' && ARGV.include?('assets:precompile')
-end
