@@ -1,2 +1,7 @@
-%h1 Game#index
-%p Find me in app/views/game/index.html.haml
+.game{'ng-controller' => 'TicTacToeCtrl'}
+  .board
+    %img{'ng-repeat' => 'space in spaces', 'ng-src' => "images/{{space}}.gif", 'ng-click' => 'mark($index)', class: "space{{$index}}"}
+  .game
+    {{status}}
+    %br
+    =link_to 'reiniciar', root_path

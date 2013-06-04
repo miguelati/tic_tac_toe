@@ -1,3 +1,53 @@
 // Place all the styles related to the Game controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.board {
+  background: image-url('background.gif') no-repeat;
+  width: 394px;
+  height: 394px;
+  .space0 {
+    position: absolute;
+    top: 60px;
+    left: 40px;
+  }
+  .space1 {
+    position: absolute;
+    top: 60px;
+    left: 180px;
+  }
+  .space2 {
+    position: absolute;
+    top: 60px;
+    left: 300px;
+  }
+  .space3 {
+    position: absolute;
+    top: 160px;
+    left: 40px;
+  }
+  .space4 {
+    position: absolute;
+    top: 160px;
+    left: 180px;
+  }
+  .space5 {
+    position: absolute;
+    top: 160px;
+    left: 300px;
+  }
+  .space6 {
+    position: absolute;
+    top: 300px;
+    left: 40px;
+  }
+  .space7 {
+    position: absolute;
+    top: 300px;
+    left: 180px;
+  }
+  .space8 {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+  }
+}

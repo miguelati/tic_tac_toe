@@ -1,8 +1,8 @@
 TicTacToe::Application.routes.draw do
+  scope :api do
+    post 'tictactoe(.:format)' => "game#play"
+  end
   root "game#index"
-  get "game" => "game#play"
-  get "end" => "game#end"
-  get "process" => "game#process"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
