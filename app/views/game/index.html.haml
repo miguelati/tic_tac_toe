@@ -1,6 +1,6 @@
 .game{'ng-controller' => 'TicTacToeCtrl'}
   .board
-    %img{'ng-repeat' => 'space in spaces', 'ng-src' => "images/{{space}}.gif", 'ng-click' => 'mark($index)', class: "space{{$index}}"}
+    %img{'ng-repeat' => 'space in spaces', 'ng-src' => "images/#{asset_path('blank.gif')}", 'ng-click' => 'mark($index)', class: "space{{$index}}"}
   .game
     {{status}}
     %br
