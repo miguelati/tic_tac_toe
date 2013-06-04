@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .board {
-  background: image-url('background.gif') no-repeat;
+  background: image-url(image_path('background.gif')) no-repeat;
   width: 394px;
   height: 394px;
   .space0 {
