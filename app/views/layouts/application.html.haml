@@ -1,0 +1,11 @@
+!!! 5
+%html{'ng-app' => 'TicTacToe'}
+  %head
+    %title TicTacToe
+      = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+      = csrf_meta_tags
+  %body
+    = yield
+    = javascript_include_tag "//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min", "data-turbolinks-track" => false
+    = javascript_include_tag "//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-resource.min", "data-turbolinks-track" => false
+    = javascript_include_tag "application", "data-turbolinks-track" => true
